@@ -20,7 +20,7 @@ pip install nbu_privat_currency_sale
 
 The source code is currently hosted on GitHub at:
 
-https://github.com/pandas-dev/pandas
+https://github.com/0brain/nbu_privat_currency_sale
 
 ---
 #### What dependencies it uses?
