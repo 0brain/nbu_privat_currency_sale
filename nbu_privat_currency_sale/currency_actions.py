@@ -34,17 +34,6 @@ def get_privat_currency_info(date: datetime) -> List[Dict[str, Union[str, float]
     return l
 
 
-#date = datetime(year=2021, month=2, day=15)
-start1 = datetime(2020, 4, 22)
-start2= datetime(2020, 4, 23)
-start3= datetime(2020, 4, 24)
-#print(get_privat_currency_info(start1))
-#print(get_privat_currency_info(start2))
-#print(get_privat_currency_info(start3))
-
-#print(get_privat_currency_info(date))
-
-
 def get_nbu_currency_info(date: datetime) -> List[Dict[str, Union[str, float]]]:
     """
     Get datetime object. Return normalized list of dicts with currency info
@@ -62,17 +51,6 @@ def get_nbu_currency_info(date: datetime) -> List[Dict[str, Union[str, float]]]:
         d["rate"] = i["rate"]
         l.append(d)
     return l
-
-#from datetime import datetime
-#from nbu_privat_currency_sale import get_nbu_currency_info
-date1 = datetime(2020, 4, 22)
-date = datetime(year=2021, month=2, day=15)
-print(get_nbu_currency_info(date1))
-#res = get_nbu_currency_info(date)
-#print(res)
-
-start = datetime(2020, 4, 22)
-end = datetime(2020, 4, 27)
 
 
 def nbu_privat_currency_info_in_date_range(start_date: datetime,
@@ -92,10 +70,6 @@ def nbu_privat_currency_info_in_date_range(start_date: datetime,
     return l
 
 
-#list_of_dicts = nbu_privat_currency_info_in_date_range(start, end)
-#print(list_of_dicts)
-
-
 def filter_by_currency_name(list_of_dicts: List[Dict[str, Union[str, float]]],
                             currency_name: str) -> List[Dict[str, Union[str, float]]]:
     """
@@ -104,11 +78,6 @@ def filter_by_currency_name(list_of_dicts: List[Dict[str, Union[str, float]]],
     """
     res = list(filter(lambda x: x['currency'] == currency_name, list_of_dicts))
     return res
-
-
-#list_usd = filter_by_currency_name(list_of_dicts, 'USD')
-#[print(i)for i in list_usd]
-#print(filter_by_currency_name(list_of_dicts, 'USD'))
 
 
 def group_by_bank_name(list_of_dicts: List[Dict[str, Union[str, float]]]) \
@@ -122,10 +91,6 @@ def group_by_bank_name(list_of_dicts: List[Dict[str, Union[str, float]]]) \
         result[d['bank']].append(d)
     result_list = list(result.values())
     return result_list
-
-
-#list_banks = group_by_bank_name(list_usd)
-#print(list_banks)
 
 
 def graph_banks_currency(lst: List[List[Dict[str, Union[str, float]]]]) -> None:
@@ -155,8 +120,6 @@ def graph_banks_currency(lst: List[List[Dict[str, Union[str, float]]]]) -> None:
     plt.show()
 
 
-#graph_banks_currency(list_banks)
-
 def save_as_json(lst: Any) -> None:
     """Save received information in JSON format."""
     with open('data_json.json', 'w', encoding='utf-8') as f:
@@ -175,8 +138,3 @@ def save_as_csv(lst: Union[List[Dict[str, Union[str, float]]],
         dict_writer = csv.DictWriter(output_file, fieldnames)
         dict_writer.writeheader()
         dict_writer.writerows(lst if isinstance(lst[0], dict) else chain.from_iterable(lst))
-
-
-#lb = [[{'bank': 'National Bank of Ukraine', 'date': '09.09.2016', 'currency': 'USD', 'rate': 26.637804}, {'bank': 'National Bank of Ukraine', 'date': '10.09.2016', 'currency': 'USD', 'rate': 26.637804}], [{'bank': 'PrivatBank', 'date': '09.09.2016', 'currency': 'USD', 'rate': 26.637804}, {'bank': 'PrivatBank', 'date': '10.09.2016', 'currency': 'USD', 'rate': 26.637804}]]
-
-#save_as_csv(res)

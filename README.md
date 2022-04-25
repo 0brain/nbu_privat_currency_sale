@@ -61,7 +61,7 @@ get_privat_currency_info(date1)
 #   ...
 # ]
 ```
-3. Return sale rate information about all currency from National Bank of Ukraine and from PrivatBank in certain date range
+3. Return sale rate information about all currency from National Bank of Ukraine and from PrivatBank in certain date range:
 ```commandline
 from datetime import datetime
 from nbu_privat_currency_sale import nbu_privat_currency_info_in_date_range
@@ -82,7 +82,7 @@ nbu_privat_currency_info_in_date_range(date1, date2)
 #   ...
 # ]
 ```
-4. Return sale rate information about currency from National Bank of Ukraine and from PrivatBank in certain date range filtered by 'currency' key value.
+4. Return sale rate information about currency from National Bank of Ukraine and from PrivatBank in certain date range filtered by 'currency' key value:
 ```commandline
 from datetime import datetime
 from nbu_privat_currency_sale import nbu_privat_currency_info_in_date_range, filter_by_currency_name
@@ -102,7 +102,7 @@ filter_by_currency_name(currency_info, currency_value)
 #   {'bank': 'PrivatBank', 'date': '23.04.2020', 'currency': 'USD', 'rate': 27.25}
 # ]
 ```
-5. Return sale rate information about all currency from National Bank of Ukraine and from PrivatBank in certain date range filtered by 'currency' key value and grouped by 'bank'.
+5. Return sale rate information about all currency from National Bank of Ukraine and from PrivatBank in certain date range filtered by 'currency' key value and grouped by 'bank':
 ```commandline
 from datetime import datetime
 from nbu_privat_currency_sale import nbu_privat_currency_info_in_date_range, filter_by_currency_name, \
@@ -127,4 +127,22 @@ group_by_bank_name(filtered_currency_info)
 #   ]
 # ]
 ```
+6. Display a graph of National Bank of Ukraine and PrivatBank currency sale rate:
+```commandline
+from datetime import datetime
+from nbu_privat_currency_sale import nbu_privat_currency_info_in_date_range, filter_by_currency_name, \
+                                     group_by_bank_name, graph_banks_currency
+
+date1 = datetime(2020, 4, 22)
+date2 = datetime(2020, 4, 27)
+
+currency_info = nbu_privat_currency_info_in_date_range(date1, date2)
+filtered_currency_info = filter_by_currency_name(currency_info, 'USD')
+grouped_info = group_by_bank_name(filtered_currency_info)
+graph_banks_currency(grouped_info)
+# Output:
+```
+<p align="center" width="100%">
+    <img width="40%" src="./static/new_graph.jpg"> 
+</p>
 ---
