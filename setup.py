@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.0.5'
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
 
     packages=find_packages(exclude=("tests",)),
-    install_requires=['requests', 'matplotlib==3.5.1'],
+    install_requires=['requests==2.27.1', 'matplotlib==3.5.1'],
     setup_requires=['wheel'],
 
     keywords=['python', 'exchange rate', 'privatbank', 'NBU', 'currency sale',

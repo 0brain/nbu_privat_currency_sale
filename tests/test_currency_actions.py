@@ -1,26 +1,14 @@
 from datetime import datetime
-import pathlib
 
 import pytest
 
 from nbu_privat_currency_sale import get_privat_currency_info, get_nbu_currency_info
-
-HERE = pathlib.Path(__file__).resolve().parent
-
-
-@pytest.fixture
-def local_nbu_rates():
-    """Use local JSON instead of request url."""
-    return HERE / "privat_rates_22.04.2020.json"
 
 
 @pytest.fixture
 def date_1():
     """Return datetime object."""
     return datetime(2020, 4, 22)
-start1 = datetime(2020, 4, 22)
-start2= datetime(2020, 4, 23)
-start3= datetime(2020, 4, 24)
 
 
 def test_get_privat_currency_info(date_1):
