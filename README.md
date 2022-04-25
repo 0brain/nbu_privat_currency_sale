@@ -16,6 +16,11 @@ nbu-privat-currency-sale library allows you to get currency sale info from Natio
 pip install nbu_privat_currency_sale
 ```
 ---
+#### How to run tests?
+```commandline
+python -m pytest -v tests/
+```
+---
 #### Where to get it?
 
 The source code is currently hosted on GitHub at:
