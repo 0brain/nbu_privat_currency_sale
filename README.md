@@ -1,6 +1,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-![graph image](./static/img_graph.png)
+![graph image](./static/graph.jpg)
 
 ### nbu-privat-currency-sale: currency sale information getter from  National Bank of Ukraine and PrivatBank
 ***
