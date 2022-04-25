@@ -1,7 +1,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 <p align="center" width="100%">
-    <img width="65%" src="./static/new_graph.jpg"> 
+    <img width="65%" src="https://raw.githubusercontent.com/0brain/nbu_privat_currency_sale/main/static/new_graph.jpg"> 
 </p>
 
 ### nbu-privat-currency-sale: currency sale information getter from  National Bank of Ukraine and PrivatBank
@@ -148,7 +148,7 @@ graph_banks_currency(grouped_info)
 # Output:
 ```
 <p align="left" width="100%">
-    <img width="40%" src="./static/new_graph.jpg"> 
+    <img width="40%" src="https://raw.githubusercontent.com/0brain/nbu_privat_currency_sale/main/static/new_graph.jpg"> 
 </p>
 
 ---
