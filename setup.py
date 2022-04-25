@@ -33,6 +33,6 @@ setup(
         "Operating System :: OS Independent",
     ],
     project_urls={
-        'Source': 'https://github.com/0brain/nbu-privat-currency-sale',
+        'Source': 'https://github.com/0brain/nbu_privat_currency_sale',
     },
 )
