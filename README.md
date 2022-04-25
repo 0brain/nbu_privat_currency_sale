@@ -1,5 +1,11 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+![PyPI - Python Version](https://img.shields.io/badge/required-matplotlib%3D%3D3.5.1-brightgreen)
+![PyPI - Python Version](https://img.shields.io/badge/required-requests%3D%3D2.27.1-brightgreen)
+![PyPI - Python Version](https://img.shields.io/badge/PYTHON-3-blue)
+
+
+
 <p align="center" width="100%">
     <img width="65%" src="https://raw.githubusercontent.com/0brain/nbu_privat_currency_sale/main/static/new_graph.jpg"> 
 </p>
