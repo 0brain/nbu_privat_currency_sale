@@ -20,7 +20,7 @@ setup(
     long_description_content_type="text/markdown",
 
     packages=find_packages(exclude=("tests",)),
-    install_requires=['requests', 'matplotlib'],
+    install_requires=['requests', 'matplotlib==3.5.1'],
     setup_requires=['wheel'],
 
     keywords=['python', 'exchange rate', 'privatbank', 'NBU', 'currency sale',
