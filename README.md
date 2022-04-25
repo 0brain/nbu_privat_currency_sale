@@ -1,31 +1,35 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-![graph image](./static/new_graph.jpg)
+<p align="center" width="100%">
+    <img width="65%" src="./static/new_graph.jpg"> 
+</p>
 
 ### nbu-privat-currency-sale: currency sale information getter from  National Bank of Ukraine and PrivatBank
 ***
-What that library can do?
+#### What that library can do?
 
 nbu-privat-currency-sale library allows you to get currency sale info from National Bank of Ukraine and PrivatBank. The information can be obtained by specifying a single date, or by specifying the date range. You can also download obtained information in json or csv formats and display a graph to compare currency sale rate of both banks.
 
 ---
-How to install it?
+#### How to install it?
 ```bash
 pip install nbu_privat_currency_sale
 ```
 ---
-Where to get it?
+#### Where to get it?
 
-The source code is currently hosted on GitHub at: 
+The source code is currently hosted on GitHub at:
+
 https://github.com/pandas-dev/pandas
+
 ---
-What dependencies it uses?
+#### What dependencies it uses?
 - [Requests](https://pypi.org/project/requests/) for requests to banks API
 - [Matplotlib](https://pypi.org/project/matplotlib/) to create the graphics
 
 ---
 
-Brief examples:
+#### Brief examples:
 
 1. Return sale rate information about all currency from National Bank of Ukraine:
 ```commandline
