@@ -3,7 +3,7 @@ import pathlib
 
 import pytest
 
-from nbu_privat_currency_sale.currency_actions import get_privat_currency_info, get_nbu_currency_info
+from nbu_privat_currency_sale import get_privat_currency_info, get_nbu_currency_info
 
 HERE = pathlib.Path(__file__).resolve().parent
 
