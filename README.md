@@ -42,7 +42,7 @@ from datetime import datetime
 from nbu_privat_currency_sale import get_nbu_currency_info
 
 date1 = datetime(2020, 4, 22)
-print(get_nbu_currency_info(date1)
+get_nbu_currency_info(date1)
 
 # Output:
 # [
