@@ -142,7 +142,8 @@ grouped_info = group_by_bank_name(filtered_currency_info)
 graph_banks_currency(grouped_info)
 # Output:
 ```
-<p align="center" width="100%">
+<p align="left" width="100%">
     <img width="40%" src="./static/new_graph.jpg"> 
 </p>
+
 ---
